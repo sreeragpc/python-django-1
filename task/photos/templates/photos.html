@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% static "images" as baseUrl %}
+{% block content %}
+<h1 class="text-white m-5">PICS</h1>
+{% for run in picst %}
+<div class="col md-4 mt-3 " >
+  <div class="card" style="width: 18rem;">
+    <img src="{{baseUrl}}/static/images/{{run.pic}}" class="card-img-top" alt="ksjdnvv">
+    <div class="card-body">
+      <h5 class="card-title">{{run.name}}</h5>
+   </div>
+</div>   
+{% endfor %}
+
+{% endblock %}``

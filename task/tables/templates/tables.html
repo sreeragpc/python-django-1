@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-white m-5">TABLE</h1>
+
+<table class="table table-dark ">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">2020</th>
+      <th scope="col">2021</th>
+      <th scope="col">2021</th>
+    </tr>
+  </thead>
+</table>
+  {% for run in contentst %}
+  <table class="table table-dark">  
+  <tbody>
+    <tr>
+      <th scope="row">{{run.number}}</th>
+      <td>{{run.name1}}</td>
+      <td>{{run.name2}}</td>
+      <td>{{run.name3}}</td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
+{% endfor %}
+
+{% endblock %}
